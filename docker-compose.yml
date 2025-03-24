@@ -41,11 +41,11 @@ services:
       - /home/docker/mnt/fast/immich_data/upload:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
     environment:
-      - TZ: Europe/Berlin
-      - DB_PASSWORD: postgres
-      - DB_USERNAME: postgres
-      - DB_DATABASE_NAME: immich
-      - DB_HOSTNAME: postgres
+      TZ: Europe/Berlin
+      DB_PASSWORD: postgres
+      DB_USERNAME: postgres
+      DB_DATABASE_NAME: immich
+      DB_HOSTNAME: postgres
     depends_on:
       - redis
       - postgres
@@ -65,11 +65,11 @@ services:
     volumes:
       - model-cache:/cache
     environment:
-      - TZ: Europe/Berlin
-      - DB_PASSWORD: postgres
-      - DB_USERNAME: postgres
-      - DB_DATABASE_NAME: immich
-      - DB_HOSTNAME: postgres
+      TZ: Europe/Berlin
+      DB_PASSWORD: postgres
+      DB_USERNAME: postgres
+      DB_DATABASE_NAME: immich
+      DB_HOSTNAME: postgres
     healthcheck:
       disable: false
 
