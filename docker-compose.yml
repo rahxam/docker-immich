@@ -28,7 +28,7 @@ services:
     volumes:
       # Do not edit the next line. If you want to change the media storage location on your system, edit the value of UPLOAD_LOCATION in the .env file
       - /home/docker/mnt/fast/immich_data/upload:/usr/src/app/upload
-      - /home/docker/mnt/fast/nextcloud_data/rahxam/files/Photos:/mnt/external/rahxam/nextcloud
+      - /home/docker/mnt/fast/nextcloud_data/data/rahxam/files/Photos:/mnt/external/rahxam/nextcloud
       - /etc/localtime:/etc/localtime:ro
     environment:
       DB_PASSWORD: postgres
